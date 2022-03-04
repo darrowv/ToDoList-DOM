@@ -37,26 +37,64 @@ body {
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.329);
 }
 
-.input {
+#input {
     height: 40px;
     width: 420px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 5px;
     border-radius: 10px;
+    padding-left: 10px;
     border: 2px solid rgb(175, 175, 175);
     font-size: 20px;
 }
 
-.addButton {
+#add-button {
     margin-top: 10px;
     border-radius: 10px;
     height: 45px;
     width: 45px;
     background: rgb(219, 243, 184);
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-part {
     display: flex;
+}
+
+#task-list {
+    align-items: center;
+    margin-top: 20px;
+    width: 400px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+}
+
+.task-item {
+    display: flex;
+}
+
+.done {
+    width: 18px;
+    height: 18px;
+}
+
+.remove-task {
+    width: 23px;
+    height: 23px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-text {
+    margin: 0 10px 0 10px;
 }

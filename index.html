@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>ToDoList</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1 class="mainheader">ToDo List</h1>
     <div class="content">
-        <div class="input-part">
-            <input type="text" class="input" placeholder="Write down your task...">
-            <input type="button" value="+" class="addButton">
-        </div>
-        <div class="task-item">
-            <p></p>
-        </div>
+      <div class="input-part">
+        <input type="text" id="input" placeholder="Write down your task..." />
+        <button id="add-button">+</button>
+      </div>
+      <ul id="task-list"></ul>
     </div>
-</body>
+    <script>
+      const taskList = document.getElementById("task-list");
+      const addButton = document.getElementById("add-button");
+      const inputText = document.getElementById("input");
+
+      addButton.addEventListener("click", () => {
+        const taskItem = document.createElement("li");
+        taskItem.className = "task-item";
+
+        const check = document.createElement("input");
+        check.type = "checkbox";
+        check.className = "done";
+
+        const text = document.createElement("p");
+        text.className = "task-text";
+        text.textContent = inputText.value;
+        inputText.value = "";
+
+        const delBtn = document.createElement("button");
+        delBtn.className = "remove-task";
+        delBtn.textContent = "×";
+
+        taskList.prepend(taskItem);
+        taskItem.append(check);
+        taskItem.append(text);
+        taskItem.append(delBtn);
+      });
+    </script>
+  </body>
 </html>
