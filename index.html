@@ -27,6 +27,14 @@
         check.type = "checkbox";
         check.className = "done";
 
+        check.addEventListener("click", () => {
+            if(check.checked) {
+              text.style.textDecoration = "line-through"
+            } else {
+              text.style.textDecoration = "none"
+            }
+        })
+
         const text = document.createElement("p");
         text.className = "task-text";
         text.textContent = inputText.value;
