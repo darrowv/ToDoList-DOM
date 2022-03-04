@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Indie+Flower&display=swap');
+
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 body {
     background: rgb(186, 204, 203);
 }
@@ -7,15 +14,15 @@ body {
     justify-content: center;
     margin: auto;
     margin-top: 20px;
-    font-size: 40px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(89, 89, 97);
+    font-size: 50px;
+    font-family: 'Indie Flower', sans-serif;
+    color: rgb(69, 69, 73);
 }
 
 .content {
     width: 500px;
     height: 600px;
-    display: flex;
+    /* display: flex; */
     margin: auto;
     margin-top: 20px;
     background: whitesmoke;
@@ -48,4 +55,8 @@ body {
     width: 45px;
     background: rgb(219, 243, 184);
     font-size: 30px;
+}
+
+.input-part {
+    display: flex;
 }
