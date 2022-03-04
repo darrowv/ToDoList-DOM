@@ -30,16 +30,23 @@
         const text = document.createElement("p");
         text.className = "task-text";
         text.textContent = inputText.value;
-        inputText.value = "";
 
         const delBtn = document.createElement("button");
         delBtn.className = "remove-task";
         delBtn.textContent = "×";
 
-        taskList.prepend(taskItem);
-        taskItem.append(check);
-        taskItem.append(text);
-        taskItem.append(delBtn);
+        delBtn.addEventListener("click", (e) => {
+            e.target.parentElement.remove()
+        })
+
+        if (inputText.value !== "") {
+          taskList.prepend(taskItem);
+          taskItem.append(check);
+          taskItem.append(text);
+          taskItem.append(delBtn);
+        }
+
+        inputText.value = "";
       });
     </script>
   </body>

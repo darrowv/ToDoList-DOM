@@ -39,7 +39,7 @@ body {
 
 #input {
     height: 40px;
-    width: 420px;
+    width: 415px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 5px;
@@ -77,6 +77,14 @@ body {
 
 .task-item {
     display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 475px;
+    border-radius: 5px;
+}
+
+.task-item:hover {
+    border: 2px solid rgb(172, 172, 172);
 }
 
 .done {
@@ -85,9 +93,9 @@ body {
 }
 
 .remove-task {
-    width: 23px;
-    height: 23px;
-    border-radius: 25px;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 15px;
     display: flex;
