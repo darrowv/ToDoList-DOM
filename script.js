@@ -10,11 +10,13 @@ addButton.addEventListener("click", () => {
   check.type = "checkbox";
   check.className = "done";
 
-  check.addEventListener("click", () => {
+  check.addEventListener("click", (e) => {
     if (check.checked) {
       text.style.textDecoration = "line-through";
+      e.target.parentElement.style.opacity = "0.5";
     } else {
       text.style.textDecoration = "none";
+      e.target.parentElement.style.opacity = "1";
     }
   });
 
@@ -36,6 +38,14 @@ addButton.addEventListener("click", () => {
     taskItem.append(text);
     taskItem.append(delBtn);
   }
+
+  taskItem.addEventListener("mouseover", () => {
+    delBtn.style.opacity = "1";
+  });
+
+  taskItem.addEventListener("mouseout", () => {
+    delBtn.style.opacity = "0";
+  });
 
   inputText.value = "";
 });
