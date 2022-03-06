@@ -9,10 +9,10 @@ addButton.addEventListener("click", addTask);
 //Обработка нажатия на enter как клик кнопки "добавить"
 
 inputText.addEventListener("keyup", (e) => {
-  if(e.code === "Enter") {
-    addButton.click()
+  if (e.code === "Enter") {
+    addButton.click();
   }
-})
+});
 
 //Непосредственно функция, которая выполняется при клике кнопки "добавить"
 
@@ -62,4 +62,4 @@ function addTask() {
   });
 
   inputText.value = "";
-};
+}
