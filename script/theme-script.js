@@ -10,7 +10,7 @@ const content = document.getElementById("content")
 //Переключение на красную тему
 
 redTheme.addEventListener("click", () => {
-  document.body.style.backgroundImage = 'url("./img3.png")'
+  document.body.style.backgroundImage = 'url("./img/red.png")'
   mainHeader.style.color = "#c6ff87"
   content.style.backgroundColor = "rgb(218 137 152 / 58%"
   content.style.border = "4px solid rgb(0 0 0 / 48%)"
@@ -28,7 +28,7 @@ redTheme.addEventListener("click", () => {
 //Переключение на темную тему
 
 darkTheme.addEventListener("click", () => {
-  document.body.style.backgroundImage = 'url("./img2.png")'
+  document.body.style.backgroundImage = 'url("./img/dark.png")'
   mainHeader.style.color = "white"
   content.style.backgroundColor = "#89c0da94"
   content.style.border = "4px solid rgb(115 144 0)"
@@ -47,7 +47,7 @@ darkTheme.addEventListener("click", () => {
 //Переключение на дефолтную тему
 
 defaultTheme.addEventListener("click", () => {
-  document.body.style.backgroundImage = 'url("./img.png")'
+  document.body.style.backgroundImage = 'url("./img/default.png")'
   mainHeader.style.color = "black"
   content.style.backgroundColor = "#ecfff9ad"
   content.style.border = "4px solid rgb(147, 183, 207)"
