@@ -63,3 +63,13 @@ function addTask() {
 
   inputText.value = "";
 }
+
+//Добавил тень на блок с инпутом при фокусе на инпуте
+
+inputText.addEventListener("focusin", (e) => {
+  e.target.parentElement.style.boxShadow = "5px 5px 10px 0px rgb(78 80 78)"
+})
+
+inputText.addEventListener("focusout", (e) => {
+  e.target.parentElement.style.boxShadow = "none"
+})

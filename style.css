@@ -57,9 +57,10 @@ body {
   box-shadow: 0 0 40px 40px white inset, 0 0 0 0 #8cec94;
   transition: 0.15s ease-in-out;
   border-radius: 23px;
+  margin-right: 10px;
   border: none;
-  height: 45px;
-  width: 45px;
+  height: fit-content;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,10 +80,16 @@ body {
   background: white;
   border-radius: 40px;
   border: 2px solid rgb(116, 146, 102);
+  transition: 0.7s;
+  align-items: center;
   margin-top: 8px;
   margin-left: 8px;
   margin-right: 8px;
-  box-shadow: 5px 5px 10px 0px #969696;
+  /* box-shadow: 5px 5px 10px 0px #969696; */
+}
+
+.input-part:focus {
+  /* box-shadow: 5px 5px 10px 0px #969696; */
 }
 
 #task-list {
