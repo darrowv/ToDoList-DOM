@@ -2,7 +2,15 @@ const taskList = document.getElementById("task-list");
 const addButton = document.getElementById("add-button");
 const inputText = document.getElementById("input");
 
-addButton.addEventListener("click", () => {
+addButton.addEventListener("click", addTask);
+
+inputText.addEventListener("keyup", (e) => {
+  if(e.code === "Enter") {
+    addButton.click()
+  }
+})
+
+function addTask() {
   const taskItem = document.createElement("li");
   taskItem.className = "task-item";
 
@@ -48,4 +56,4 @@ addButton.addEventListener("click", () => {
   });
 
   inputText.value = "";
-});
+};
