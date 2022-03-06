@@ -30,6 +30,8 @@ body {
   background: #ecfff9ad;
   border: 4px solid rgb(147, 183, 207);
   border-radius: 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   transition: 0.3s;
 }
 
@@ -42,33 +44,45 @@ body {
 #input {
   height: 45px;
   width: 520px;
-  margin-top: 10px;
   margin-left: 10px;
   margin-right: 5px;
   border-radius: 10px;
   padding-left: 10px;
-  border: 2px solid rgb(175, 175, 175);
+  border: none;
   font-size: 20px;
+  outline: none;
 }
 
 #add-button {
-  margin-top: 10px;
-  border-radius: 10px;
+  box-shadow: 0 0 40px 40px white inset, 0 0 0 0 #8cec94;
+  transition: 0.15s ease-in-out;
+  border-radius: 23px;
+  border: none;
   height: 45px;
   width: 45px;
-  background: rgb(227, 255, 185);
-  font-size: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
+}
+
+#add-img {
+  width: 30px;
 }
 
 #add-button:hover {
-  background: rgb(165, 247, 98);
+  box-shadow: 0 0 10px 0 #8cec94 inset, 0 0 10px 4px #8cec94;
 }
 
 .input-part {
   display: flex;
+  background: white;
+  border-radius: 40px;
+  border: 2px solid rgb(116, 146, 102);
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  box-shadow: 5px 5px 10px 0px #969696;
 }
 
 #task-list {
@@ -85,7 +99,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 560px;
-  border-bottom: 2px solid rgb(37 37 37);
+  border-bottom: 2px solid rgb(95, 95, 95);
   word-break: break-all;
   transition: 0.2s;
 }

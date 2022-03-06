@@ -12,15 +12,15 @@ const content = document.getElementById("content");
 redTheme.addEventListener("click", () => {
   document.body.style.backgroundImage = 'url("./img/red.png")';
   mainHeader.style.color = "#c6ff87";
-  content.style.backgroundColor = "rgb(218 137 152 / 58%";
+  content.style.backgroundColor = "rgb(226 157 157 / 81%)";
   content.style.border = "4px solid rgb(0 0 0 / 48%)";
 
   content.addEventListener("mouseover", () => {
-    content.style.backgroundColor = "rgb(135 190 180 / 78%)";
+    content.style.backgroundColor = "rgb(126 226 208 / 78%)";
     content.style.border = "4px solid #2d2d2d";
   });
   content.addEventListener("mouseout", () => {
-    content.style.backgroundColor = "rgb(218 137 152 / 58%";
+    content.style.backgroundColor = "rgb(226 157 157 / 81%)";
     content.style.border = "4px solid rgb(0 0 0 / 48%)";
   });
 });
@@ -30,7 +30,7 @@ redTheme.addEventListener("click", () => {
 darkTheme.addEventListener("click", () => {
   document.body.style.backgroundImage = 'url("./img/dark.png")';
   mainHeader.style.color = "white";
-  content.style.backgroundColor = "#89c0da94";
+  content.style.backgroundColor = "rgb(132 195 224 / 84%)";
   content.style.border = "4px solid rgb(115 144 0)";
 
   content.addEventListener("mouseover", () => {
@@ -38,7 +38,7 @@ darkTheme.addEventListener("click", () => {
     content.style.border = "4px solid rgb(146 182 2)";
   });
   content.addEventListener("mouseout", () => {
-    content.style.backgroundColor = "#89c0da94";
+    content.style.backgroundColor = "rgb(132 195 224 / 84%)";
     content.style.border = "4px solid rgb(115 144 0)";
   });
 });
