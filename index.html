@@ -6,9 +6,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="mainheader">ToDo List</h1>
+    <h1 class="mainheader" id="main-header">ToDo List</h1>
 
-    <div class="content">
+    <div class="themes">
+      <button id="red-theme" class="theme-btn"></button>
+      <button id="dark-theme" class="theme-btn"></button>
+      <button id="default" class="theme-btn"></button>
+    </div>
+    
+
+    <div class="content" id="content">
       <div class="input-part">
         <input type="text" id="input" placeholder="Write down your task..." />
         <button id="add-button">+</button>
@@ -18,5 +25,6 @@
     </div>
 
     <script src="./script.js"></script>
+    <script src="./theme-script.js"></script>
   </body>
 </html>
