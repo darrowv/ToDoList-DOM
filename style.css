@@ -22,8 +22,8 @@ body {
 
 .content {
   width: 600px;
-  height: auto;
-  min-height: 300px;
+  /* height: 500px; */
+  /* min-height: 300px; */
   margin: auto;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -89,9 +89,28 @@ body {
 
 #task-list {
   align-items: center;
-  width: 400px;
+  overflow-y: scroll;
+  width: 575px;
+  height: 400px;
   margin: 20px 10px 30px 10px;
   padding-left: 0;
+}
+
+#task-list::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 10px;
+  background-color: #f9f9fd71;
+}
+
+#task-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #25528a9c;
+}
+
+#task-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd7c;
 }
 
 .task-item {
@@ -100,7 +119,7 @@ body {
   margin-bottom: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 560px;
+  width: 550px;
   border-bottom: 2px solid rgb(95, 95, 95);
   word-break: break-all;
   transition: 0.2s;
