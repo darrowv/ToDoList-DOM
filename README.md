@@ -1,6 +1,6 @@
 # ToDoList-DOM
 
-[todogif]: [img/todolist (1).gif](https://github.com/darrowv/ToDoList-DOM/blob/main/img/todolist%20(1).gif) "Showcase gif"
+[todogif]: [img/todolist (1).gif](https://github.com/darrowv/ToDoList-DOM/blob/main/img/todolist%20(1).gif "Showcase gif") 
 
 ![alt text][todogif]
 
